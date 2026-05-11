@@ -48,7 +48,8 @@ export default function SettingsPage() {
                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 block">AI Engine Endpoint</label>
                <input 
                  type="text" 
-                 defaultValue="http://localhost:8000"
+                 defaultValue="/ai"
+                 placeholder="e.g. /ai or http://localhost:8000"
                  className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-slate-300 outline-none focus:border-blue-500/50"
                />
              </div>
@@ -56,7 +57,8 @@ export default function SettingsPage() {
                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 block">Websocket Server</label>
                <input 
                  type="text" 
-                 defaultValue="ws://localhost:5000"
+                 defaultValue="/api"
+                 placeholder="e.g. /api or ws://localhost:5000"
                  className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-slate-300 outline-none focus:border-blue-500/50"
                />
              </div>

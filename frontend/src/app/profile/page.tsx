@@ -14,9 +14,9 @@ export default function ProfilePage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="glass-card rounded-2xl border border-slate-800 p-8 flex flex-col items-center text-center">
           <div className="w-32 h-32 rounded-full bg-blue-600 flex items-center justify-center text-white text-4xl font-bold mb-6 border-4 border-slate-900 shadow-[0_0_30px_rgba(59,130,246,0.3)]">
-            JD
+            NU
           </div>
-          <h3 className="text-2xl font-bold text-white mb-1">John Doe</h3>
+          <h3 className="text-2xl font-bold text-white mb-1">Naseer Ullah</h3>
           <p className="text-blue-500 font-bold text-sm uppercase tracking-widest mb-6">Security Lead Analyst</p>
           
           <div className="w-full grid grid-cols-2 gap-4">
@@ -42,7 +42,7 @@ export default function ProfilePage() {
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 font-bold uppercase">Email Address</p>
-                  <p className="text-sm font-medium text-white">john.doe@cybershield.ai</p>
+                  <p className="text-sm font-medium text-white">naseer.ullah@cybershield.ai</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

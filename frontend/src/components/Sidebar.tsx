@@ -72,10 +72,10 @@ export default function Sidebar() {
         <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
-              JD
+              NU
             </div>
             <div>
-              <p className="text-sm font-semibold text-white">John Doe</p>
+              <p className="text-sm font-semibold text-white">Naseer Ullah</p>
               <p className="text-xs text-slate-500">Security Lead</p>
             </div>
           </div>
