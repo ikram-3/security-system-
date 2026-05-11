@@ -4,6 +4,7 @@ emoji: 🛡️
 colorFrom: blue
 colorTo: indigo
 sdk: docker
+app_port: 7860
 pinned: false
 license: mit
 ---
@@ -32,7 +33,7 @@ CyberShield AI is a state-of-the-art cybersecurity threat detection and monitori
 
 ### Backend
 - **Runtime**: Node.js + Express
-- **Database**: MySQL (Sequelize ORM)
+- **Database**: SQLite (via Sequelize ORM)
 - **Real-time**: Socket.io
 - **Security**: Helmet, CORS, JWT, bcrypt
 
@@ -46,7 +47,6 @@ CyberShield AI is a state-of-the-art cybersecurity threat detection and monitori
 ### Prerequisites
 - Node.js (v18+)
 - Python (v3.10+)
-- MySQL (Running locally or via Docker)
 - Docker & Docker Compose (Optional)
 
 ### Automated Setup (Docker)
