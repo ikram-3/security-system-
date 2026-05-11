@@ -1,0 +1,83 @@
+========================================================================
+CYBERSHIELD AI - COMPLETE SETUP & INSTALLATION GUIDE
+========================================================================
+
+1. PROJECT DESCRIPTION
+----------------------
+CyberShield AI is an advanced security monitoring system. It uses an AI engine
+to detect potential security threats in real-time and displays them on a 
+modern dashboard.
+
+Main Components:
+- Backend: Node.js / Express (Handles data and security)
+- Frontend: Next.js (Visual dashboard)
+- AI Engine: Python / FastAPI (Machine learning threat detection)
+
+2. PREREQUISITES (DOWNLOAD LINKS)
+---------------------------------
+Please download and install the following tools before setting up:
+
+- Git (For cloning): https://git-scm.com/downloads
+- Node.js (Version 18+ recommended): https://nodejs.org/
+- Python (Version 3.10+): https://www.python.org/downloads/
+- VS Code (Recommended Editor): https://code.visualstudio.com/
+
+3. STEP 1: DOWNLOAD FROM GITHUB
+-------------------------------
+Open your terminal (CMD or PowerShell) and run:
+
+git clone https://github.com/ikram-3/security-system-
+cd security-system-
+
+4. STEP 2: BACKEND SETUP (NODE.JS)
+----------------------------------
+Open a terminal inside the project folder:
+
+cd backend
+npm install
+
+(Optional) Create a file named .env in the backend folder:
+PORT=5000
+JWT_SECRET=your_secret_key
+
+5. STEP 3: FRONTEND SETUP (NEXT.JS)
+-----------------------------------
+Open a new terminal inside the project folder:
+
+cd frontend
+npm install
+
+6. STEP 4: AI ENGINE SETUP (PYTHON)
+-----------------------------------
+Open a new terminal inside the project folder:
+
+cd ai-engine
+pip install -r requirements.txt
+
+7. HOW TO RUN THE PROJECT
+-------------------------
+You need to run these 3 commands in 3 separate terminals:
+
+Terminal 1 (Backend):
+cd backend
+npm start
+
+Terminal 2 (AI Engine):
+cd ai-engine
+python main.py
+
+Terminal 3 (Frontend):
+cd frontend
+npm run dev
+
+Open your browser and go to: http://localhost:3000
+
+8. MAIN LIBRARIES USED
+----------------------
+- Node.js Libraries: express, socket.io, sequelize, jsonwebtoken, mysql2.
+- Python Libraries: fastapi, scikit-learn, pandas, numpy, uvicorn.
+- Frontend Libraries: next.js, framer-motion, lucide-react, recharts, tailwindcss.
+
+========================================================================
+Created by: Antigravity AI
+========================================================================
