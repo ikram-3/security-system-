@@ -2,7 +2,7 @@
 title: CyberShield
 emoji: 🛡️
 colorFrom: blue
-colorTo: slate
+colorTo: indigo
 sdk: docker
 pinned: false
 license: mit
