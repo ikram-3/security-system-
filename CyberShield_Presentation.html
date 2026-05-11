@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield AI - Presentation</title>
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/dracula.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --r-main-font: 'Inter', sans-serif;
+            --r-heading-font: 'Outfit', sans-serif;
+            --r-heading-color: #3b82f6;
+            --accent-blue: #3b82f6;
+            --accent-red: #ef4444;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            letter-spacing: -1px;
+        }
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal .slides section.center {
+            text-align: center;
+        }
+        .highlight {
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+        .danger {
+            color: var(--accent-red);
+            font-weight: bold;
+        }
+        .stat-card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        ul {
+            list-style-type: none !important;
+        }
+        li::before {
+            content: "▹";
+            color: var(--accent-blue);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title -->
+            <section class="center">
+                <h1 style="font-size: 3.5em; color: white;">Cyber<span class="highlight">Shield</span> AI</h1>
+                <h3>Advanced Threat Detection System</h3>
+                <hr style="width: 50%; border-color: rgba(59, 130, 246, 0.3);">
+                <p>Presented by: <span class="highlight">Naseer Ullah</span></p>
+                <p style="font-size: 0.8em; color: #64748b;">Program: Cyber Security</p>
+            </section>
+
+            <!-- Slide 2: The Challenge -->
+            <section>
+                <h2>The Challenge</h2>
+                <p>Modern cyber threats are evolving faster than traditional signature-based systems can keep up.</p>
+                <ul>
+                    <li><span class="danger">Zero-day Attacks</span>: Unknown vulnerabilities.</li>
+                    <li><span class="danger">Advanced Persistent Threats (APTs)</span>: Stealthy, long-term presence.</li>
+                    <li><span class="danger">Data Overload</span>: Analysts are overwhelmed by millions of logs.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 3: The Solution -->
+            <section>
+                <h2>The Solution: CyberShield AI</h2>
+                <p>An enterprise-grade platform that combines real-time monitoring with <span class="highlight">Machine Learning</span>.</p>
+                <div class="stat-card">
+                    <p>It doesn't just watch for known patterns; it learns what "normal" looks like and flags <span class="highlight">anomalies</span> in real-time.</p>
+                </div>
+            </section>
+
+            <!-- Slide 4: Tech Stack -->
+            <section>
+                <h2>Modern Tech Stack</h2>
+                <div class="grid">
+                    <div>
+                        <h4 class="highlight">Frontend</h4>
+                        <p style="font-size: 0.7em;">Next.js 15, Tailwind CSS, Framer Motion, Recharts</p>
+                    </div>
+                    <div>
+                        <h4 class="highlight">Backend</h4>
+                        <p style="font-size: 0.7em;">Node.js, Express, SQLite, Socket.io, JWT</p>
+                    </div>
+                </div>
+                <div class="center" style="margin-top: 40px;">
+                    <h4 class="highlight">AI Engine</h4>
+                    <p style="font-size: 0.7em;">Python (FastAPI), Scikit-Learn, Pandas, Numpy</p>
+                </div>
+            </section>
+
+            <!-- Slide 5: AI Engine Deep Dive -->
+            <section>
+                <h2>AI Engine Capabilities</h2>
+                <ul>
+                    <li><span class="highlight">Anomaly Detection</span>: Uses <i>Isolation Forest</i> to detect outliers in system behavior.</li>
+                    <li><span class="highlight">Threat Scoring</span>: Real-time risk assessment (0-100%) for every event.</li>
+                    <li><span class="highlight">Pattern Recognition</span>: Identifies DDoS, Brute Force, and Malware footprints.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 6: Architecture -->
+            <section>
+                <h2>System Architecture</h2>
+                <ol>
+                    <li><span class="highlight">Data Ingestion</span>: Logs collected from servers/endpoints.</li>
+                    <li><span class="highlight">AI Analysis</span>: FastAPI processes logs and generates threat scores.</li>
+                    <li><span class="highlight">Alerting</span>: Node.js emits events via WebSockets.</li>
+                    <li><span class="highlight">Visualization</span>: Next.js dashboard displays live alerts and trends.</li>
+                </ol>
+            </section>
+
+            <!-- Slide 7: Security Features -->
+            <section>
+                <h2>Platform Security</h2>
+                <ul>
+                    <li><span class="highlight">JWT Authentication</span>: Secure stateless sessions.</li>
+                    <li><span class="highlight">RBAC</span>: Role-Based Access Control for Analysts vs Admins.</li>
+                    <li><span class="highlight">Secure Proxy</span>: Unified Nginx orchestration.</li>
+                    <li><span class="highlight">Encrypted Storage</span>: Sensitive data protection.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 8: Real-time Dashboard -->
+            <section>
+                <h2>The SOC Dashboard</h2>
+                <div class="grid">
+                    <div style="font-size: 0.8em;">
+                        <ul>
+                            <li>Live Threat Feed</li>
+                            <li>Severity Distribution Charts</li>
+                            <li>System Health Monitoring</li>
+                            <li>Advanced Log Terminal</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card" style="font-size: 0.6em; border-style: dashed;">
+                        [ Visualizing millions of data points into actionable insights ]
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 9: Conclusion -->
+            <section class="center">
+                <h2>Future of <span class="highlight">CyberShield AI</span></h2>
+                <p>Scalable, automated, and intelligent security for the modern enterprise.</p>
+                <div style="margin-top: 50px;">
+                    <h1 class="highlight">THANK YOU!</h1>
+                    <p>Questions?</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            transition: 'slide',
+            backgroundTransition: 'fade'
+        });
+    </script>
+</body>
+</html>
