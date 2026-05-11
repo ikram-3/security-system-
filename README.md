@@ -1,3 +1,13 @@
+---
+title: CyberShield
+emoji: 🛡️
+colorFrom: blue
+colorTo: slate
+sdk: docker
+pinned: false
+license: mit
+---
+
 # CyberShield AI — Enterprise Cybersecurity Platform
 
 CyberShield AI is a state-of-the-art cybersecurity threat detection and monitoring platform. It leverages AI/ML to detect anomalies in system logs and network traffic, providing security analysts with real-time insights and a modern SOC (Security Operations Center) dashboard.
