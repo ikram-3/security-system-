@@ -53,7 +53,7 @@ COPY --from=frontend-builder /app/frontend/.next ./frontend/.next
 COPY --from=frontend-builder /app/frontend/public ./frontend/public
 COPY --from=frontend-builder /app/frontend/package*.json ./frontend/
 COPY --from=frontend-builder /app/frontend/next.config.ts ./frontend/
-RUN cd frontend && npm install --omit=dev
+RUN cd frontend && npm install
 
 # ----- Nginx -----
 COPY nginx.conf /etc/nginx/nginx.conf
@@ -62,7 +62,9 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Fix permissions so user 1000 can run nginx and write to dirs
-RUN mkdir -p /var/log/nginx /var/lib/nginx/body /run/nginx /tmp/nginx \
+RUN mkdir -p /var/log/nginx /var/lib/nginx/body /run/nginx \
+        /tmp/nginx/body /tmp/nginx/proxy /tmp/nginx/fastcgi \
+        /tmp/nginx/uwsgi /tmp/nginx/scgi \
     && chown -R user:user /home/user/app \
     && chown -R user:user /var/log/nginx /var/lib/nginx /run \
     && chown -R user:user /etc/nginx/nginx.conf \
